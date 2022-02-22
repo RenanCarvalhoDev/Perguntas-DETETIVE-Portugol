@@ -1,0 +1,62 @@
+programa  
+{  
+    funcao inicio()  
+    {   
+        caracter nome[5]
+        inteiro a = 0
+        inteiro b = 0
+        cadeia perguntas [5][]= {{"Você estava no shopping ontem a noite?(s/n) "},{"Você esta em frente a loja Taurus?(s/n) "},{"Você comprou sorvete?(s/n) "},{"Você estava usando o celular?(s/n) "}, {"Você pegou onibus?(s/n) "}}
+        inteiro contador = 0
+        faca
+        {
+            escreva("Digite S ou N para continuar !!!!!\n")
+            escreva("\n")
+            escreva(perguntas[b][0])  
+            
+            leia (nome[a])
+            
+            se (nome[a] == 's')
+            {
+                limpa()
+                a ++
+                b ++
+            
+            } 
+            
+            senao se (nome[a]=='n') 
+            {
+                limpa()
+                a ++
+                b ++
+           }
+            
+        } enquanto (a <=4)
+        
+        
+        para (inteiro i = 0; i <= 4; i++)
+           {
+              se (nome[i] == 's')
+              {
+                  contador ++
+              }
+           }
+           
+        se (contador <=2)
+                {
+                    escreva("\nVocê está LIBERADO !\n")
+                }
+            
+        senao se (contador == 3)
+                {
+                    escreva("\nVocê é o SUSPEITO !\n")
+                }    
+                    
+        senao se (contador >=4)
+                {
+                    escreva("\nVocê é o CULPADO !\n")
+                    
+                }   
+        
+    }  
+    
+}  
